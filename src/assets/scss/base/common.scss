@@ -1,5 +1,6 @@
 @charset "utf-8";
-@import './reset', '../partials/mixin', '../partials/theme';
+@import './reset', './grid_system.scss', '../partials/mixin',
+  '../partials/theme';
 
 * {
   margin: 0;
@@ -43,7 +44,9 @@ textarea {
 #root {
   display: flex;
   flex-direction: column;
+  max-width: 1366px;
   min-height: 100vh;
+  margin: 0 auto;
 
   & > div {
     display: inherit;
